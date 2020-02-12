@@ -1,0 +1,49 @@
+<div id="sign-in-popup">
+
+  <mat-card id="sign-in-popup-card">
+    <div id="sign-in-title" class="mat-display-1">Sign in Coderman</div>
+    <form class="example-form">
+      <mat-form-field style="width: 100%">
+        <label>
+          <input
+            ngModel
+            email
+            #email="ngModel"
+            matInput
+            placeholder="Email"
+            value=""
+            required
+            autofocus
+            name="emailField"
+          >
+        </label>
+        <mat-error *ngIf="email.invalid && email.errors.required">
+          Enter a valid email address.
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field style="width: 100%">
+        <label>
+          <input
+            ngModel
+            #password="ngModel"
+            matInput
+            placeholder="Password"
+            value=""
+            type="password"
+            required
+            name="passwordField"
+          >
+        </label>
+        <mat-error *ngIf="email.invalid && email.errors.required">
+          Enter a valid password.
+        </mat-error>
+      </mat-form-field>
+    </form>
+
+    <br>
+    <button (click)="onSignIn()" mat-raised-button color="primary" style="width: 100%" class="mat-display-3">Sign In</button>
+
+  </mat-card>
+
+</div>
