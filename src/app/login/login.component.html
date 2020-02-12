@@ -3,7 +3,7 @@
   <mat-card id="sign-in-popup-card">
     <div id="sign-in-title" class="mat-display-1">Sign in Coderman</div>
     <form class="example-form">
-      <mat-form-field style="width: 100%">
+      <mat-form-field class="match-parent-width">
         <label>
           <input
             ngModel
@@ -22,7 +22,7 @@
         </mat-error>
       </mat-form-field>
       <br>
-      <mat-form-field style="width: 100%">
+      <mat-form-field class="match-parent-width">
         <label>
           <input
             ngModel
@@ -42,7 +42,7 @@
     </form>
 
     <br>
-    <button (click)="onSignIn()" mat-raised-button color="primary" style="width: 100%" class="mat-display-3">Sign In</button>
+    <button (click)="onSignIn()" mat-raised-button color="primary" style="width: 100%" class="match-parent-width mat-display-3">Sign In</button>
 
   </mat-card>
 
